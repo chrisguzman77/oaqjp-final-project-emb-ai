@@ -17,7 +17,7 @@ def sent_detector():
 
     response = emotion_detector(text_to_analyze)
 
-    if request.get('dominant_emotion') is None:
+    if response.get('dominant_emotion') is None:
         return "Invalid input! Try again."
 
     return response
